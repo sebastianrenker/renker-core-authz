@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renker-core-authz"
+version = "0.1.0"
+description = "Deterministic capability + policy + tamper-evident audit for autonomous agent actions (the public authorization core of the Renker platform)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Sebastian Renker" }]
+keywords = ["agent-security", "capabilities", "authorization", "policy", "audit"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "hypothesis>=6", "mypy>=1.8"]
+
+[project.urls]
+Homepage = "https://github.com/sebastianrenker/renker-core-authz"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["renker_core_authz*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["renker_core_authz"]
+ignore_missing_imports = true
+warn_unused_ignores = false
