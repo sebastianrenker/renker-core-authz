@@ -69,5 +69,23 @@ pip install -e ".[dev]"
 ruff format --check . && ruff check . && mypy && pytest -q
 ```
 
+## Related RENKER projects
+`renker-core-authz` is the public authorization core consumed across the Renker
+platform — infrastructure for trusted, autonomous AI systems built around three
+pillars (ACT / LEARN / SECURE) on a shared identity, capability, permission,
+policy, and audit foundation (`renker-core`, currently private; this package is
+its public authorization subset).
+
+```text
+RENKER — ACT (Rencora) · LEARN (Continuum) · SECURE (RenkerVault)
+                         shared foundation: renker-core
+```
+
+| Pillar | Role | Repo |
+| --- | --- | --- |
+| Rencora | ACT — desktop agent runtime, integrates this library | https://github.com/sebastianrenker/rencora |
+| Continuum | LEARN — evidence-verified autonomous research | https://github.com/sebastianrenker/continuum |
+| RenkerVault | SECURE — identity & secure communication | https://github.com/sebastianrenker/renkervault |
+
 ## License
 Apache-2.0 (see `LICENSE`).
