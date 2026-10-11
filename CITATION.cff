@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "renker-core-authz: deterministic capability and policy authorization with a tamper-evident audit log for AI agent actions"
+type: software
+authors:
+  - family-names: Renker
+    given-names: Sebastian
+license: Apache-2.0
+repository-code: "https://github.com/sebastianrenker/renker-core-authz"
+url: "https://sebastianrenker.github.io/renker-core-authz/"
+keywords:
+  - AI agents
+  - authorization
+  - prompt injection
+  - audit log
+  - capability-based security
