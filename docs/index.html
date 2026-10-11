@@ -5,9 +5,12 @@
 <meta name="keywords" content="AI agent security, prompt injection, authorization, capability-based security, audit log, policy engine, Python">
 <link rel="canonical" href="https://sebastianrenker.github.io/renker-core-authz/">
 <meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website"><meta property="og:title" content="renker-core-authz">
 <meta property="og:description" content="Deterministic authorization for AI agent actions — decided outside the model."><meta property="og:url" content="https://sebastianrenker.github.io/renker-core-authz/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://sebastianrenker.github.io/renker-core-authz/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://sebastianrenker.github.io/renker-core-authz/og.png">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "renker-core-authz", "description": "Zero-dependency Python library: capability + policy engine returning ALLOW, DENY or REQUIRE_APPROVAL, with a tamper-evident hash-chained audit log. Apache-2.0.", "codeRepository": "https://github.com/sebastianrenker/renker-core-authz", "programmingLanguage": "Python", "url": "https://sebastianrenker.github.io/renker-core-authz/", "author": {"@type": "Person", "name": "Sebastian Renker", "url": "https://github.com/sebastianrenker"}, "license": "Apache-2.0"}</script>
 <style>
 :root{--bg:#eceef1;--card:#f7f8fa;--ink:#16171a;--ink2:#565961;--rule:#d5d8dd;--acc:#5b47e0;--ok:#0f7a54;--warn:#8f6410}
@@ -25,14 +28,14 @@ h1{font-size:clamp(34px,6vw,56px);line-height:1.08;margin:12px 0 16px;letter-spa
 footer{border-top:1px solid var(--rule);margin-top:64px;padding:28px 0;color:var(--ink2);font-size:15px}footer a{color:var(--acc)}
 a{color:var(--acc)}:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
 </style></head><body>
-<header><div class="w"><a href="https://sebastianrenker.github.io/renker-core-authz/">renker-core-authz</a><nav><a href="#features">Features</a><a href="#honest">Limits</a><a href="https://github.com/sebastianrenker/renker-core-authz">GitHub</a></nav></div></header>
+<header><div class="w"><a href="https://sebastianrenker.github.io/renker-core-authz/">renker-core-authz</a><nav><a href="#features">Features</a><a href="#honest">Limits</a><a href="" rel="noopener noreferrer">GitHub</a></nav></div></header>
 <main class="w">
 <section class="hero"><div class="tag">Python · open source</div><h1>Deterministic authorization for AI agent actions — decided outside the model.</h1>
 <p class="lead">Guardrails built inside an LLM can be talked around. An injected instruction changes what an agent requests — not what it is allowed to do, if the decision lives in a small deterministic function that reads only trusted grants.</p>
-<a class="btn p" href="https://github.com/sebastianrenker/renker-core-authz">View on GitHub</a><a class="btn s" href="https://github.com/sebastianrenker/renker-core-authz#readme">Read the README</a></section>
+<a href="" rel="noopener noreferrer">View on GitHub</a><a href="" rel="noopener noreferrer">Read the README</a></section>
 <h2 id="features">What it does</h2><div class="grid"><div class="c"><h3>Capabilities</h3><p>Immutable, least-privilege grants: one action verb plus one path scope.</p></div><div class="c"><h3>Policy engine</h3><p>evaluate() returns ALLOW / DENY / REQUIRE_APPROVAL with an explainable reason.</p></div><div class="c"><h3>Tamper-evident audit</h3><p>sha256 hash chain with head anchor, verify() and query().</p></div><div class="c"><h3>GuardedFilesystem</h3><p>Least-privilege file access behind the decision.</p></div><div class="c"><h3>Zero runtime deps</h3><p>Standard library only. Python 3.11+.</p></div></div>
 <h2 id="honest">Honest limits</h2><div class="note"><b>Read this first.</b> Audit is tamper-evident, not immutable. The library provides no cryptographic authentication of actors; it decides, it does not identify.</div>
-<h2>Runnable demo</h2><p><a href="https://github.com/sebastianrenker/renker-agent-demo">renker-agent-demo</a> — An MCP server that blocks a prompt-injection exfiltration attempt without the agent&#x27;s cooperation.</p>
+<h2>Runnable demo</h2><p><a href="" rel="noopener noreferrer">renker-agent-demo</a> — An MCP server that blocks a prompt-injection exfiltration attempt without the agent&#x27;s cooperation.</p>
 </main>
-<footer><div class="w">License: Apache-2.0 · <a href="https://github.com/sebastianrenker/renker-core-authz">Source</a> · Part of <a href="https://sebastianrenker.github.io/">RENKER</a> by <a href="https://github.com/sebastianrenker">Sebastian Renker</a></div></footer>
+<footer><div class="w">License: Apache-2.0 · <a href="" rel="noopener noreferrer">Source</a> · Part of <a href="https://sebastianrenker.github.io/">RENKER</a> by <a href="" rel="noopener noreferrer">Sebastian Renker</a></div></footer>
 </body></html>
