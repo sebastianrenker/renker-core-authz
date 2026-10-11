@@ -207,7 +207,9 @@ class TestAuditHardening:
             log.verify()
 
     def test_verify_empty_log_ok(self, tmp_path):
-        self._log(tmp_path).verify()
+        log = self._log(tmp_path)
+        log.verify()  # raises AuditError on any inconsistency
+        assert log.read_all() == []
 
 
 class TestIntegrationHardening:
