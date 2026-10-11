@@ -55,7 +55,11 @@ pip install git+https://github.com/sebastianrenker/renker-core-authz
 ```python
 from datetime import datetime, timedelta, timezone
 from renker_core_authz import (
-    Actor, Capability, CapabilityStore, PathScope, GuardedFilesystem,
+    Actor,
+    Capability,
+    CapabilityStore,
+    PathScope,
+    GuardedFilesystem,
 )
 from renker_core_authz.audit import AuditLog
 
